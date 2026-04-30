@@ -1,0 +1,190 @@
+/* --- Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: peru;
+    overflow-x: hidden;
+    font-family: 'Courier New', monospace;
+    color: white;
+}
+
+/* --- Navigation --- */
+.logo h1 {
+    font-size: 38px;
+    padding: 30px 40px;
+    letter-spacing: 2px;
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px 20px 40px;
+    margin-top: -60px;
+}
+
+.intro a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.intro a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.page-title {
+    padding: 20px 40px;
+    font-size: 28px;
+}
+
+/* --- Contact Layout --- */
+.contact-container {
+    padding: 20px 40px;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.contact-info, .contact-form-wrapper {
+    flex: 1;
+}
+
+.contact-info h3, .contact-form-wrapper h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* --- Buttons & Inputs --- */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-social {
+    display: block;
+    width: 220px;
+    padding: 12px;
+    text-align: center;
+    background-color: white;
+    color: peru;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-social:hover {
+    background-color: #ffd700;
+    color: #333;
+    transform: translateX(5px);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffd700;
+}
+
+.btn-send {
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.btn-send:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* --- Responsive Adjustments --- */
+@media screen and (max-width: 1150px) {
+   .logo h1 {
+        text-align: center;
+        padding: 30px 20px 10px 20px; /* Adjusting padding for smaller screens */
+    }
+
+    .intro {
+        margin-top: 0px; /* Removes the negative desktop margin */
+        display: flex;
+        justify-content: center; /* Centers the row of links */
+        padding: 10px 20px;
+    }
+
+    .intro nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allows links to go to the next line if screen is too narrow */
+        gap: 10px; /* Adds consistent spacing between wrapped links */
+    }
+
+    .intro a {
+        font-size: 16px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .page-title{
+        text-align: center;
+    }
+
+    .contact-container {
+        padding-bottom: 50px;
+    }
+    
+    .contact-form-wrapper {
+        margin-bottom: 20px;
+    }
+    
+    .contact-flex {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+
+    .btn-social:hover {
+        transform: translateY(-3px);
+    }
+}

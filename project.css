@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: peru;
+    overflow-x: hidden;
+    font-family: 'Courier New', monospace;
+    }
+
+.logo h1{
+    font-size: 38px;
+    color: white;
+    padding: 30px 40px;
+    letter-spacing: 2px;
+    /* padding-top: 30px;
+    padding-left: 40px; */
+}
+
+.intro{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 40px 20px 40px;
+    margin-top: -60px;
+    z-index: 100;
+    /* padding: 20px;
+    margin-left: 663px;
+    margin-top: -59px; */
+}
+
+.intro a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    /* font-size: 20px; */
+    padding: 0 15px;
+    transition: 0.3s;
+    /* padding: 0 20px; */
+}
+
+.intro a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.project-title, .upcomming-title-header {
+    color: white;
+    margin-top: 0px;
+    font-size: 28px;
+    margin-left: 40px;
+}
+
+.project-item-container{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+    /* margin-right: 50px; */
+    /* width: 100%; */
+}
+
+
+.project-text { flex: 2; color: white; }
+
+.project-subtitle { font-size: 20px; margin-bottom: 65px; color: #ffd700;}
+
+.project-content { font-size: 18px; line-height: 1.6; padding-left: 20px; margin-top: -50px; padding-bottom: 40px;}
+
+.project-pic { flex: 1; display: flex; justify-content: center; }
+
+.project-pic img { width: 180px; height: auto; border-radius: 10px; }
+
+.upcomming-pics-wrapper { flex: 1; display: flex; gap: 20px; justify-content: center; }
+
+.upcomming-pics-wrapper img { width: 120px; height: auto; opacity: 0.8; }
+
+.project-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 40px;
+}
+
+/* =============================================
+   RESPONSIVE FEATURES
+   ============================================= */
+
+@media screen and (max-width: 1150px) {
+    .logo h1 {
+        text-align: center;
+        padding: 30px 20px 10px 20px; /* Adjusting padding for smaller screens */
+    }
+    
+    .intro {
+        margin-top: 0px; /* Removes the negative desktop margin */
+        display: flex;
+        justify-content: center; /* Centers the row of links */
+        padding: 10px 20px;
+    }
+
+    .intro nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allows links to go to the next line if screen is too narrow */
+        gap: 10px; /* Adds consistent spacing between wrapped links */
+    }
+
+    .intro a {
+        font-size: 16px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .project-item-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-content ul {
+        list-style-position: inside;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .upcomming-pics-wrapper {
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .project-pic img, .upcomming-pics-wrapper img {
+        width: 150px;
+    }
+
+    .project-title{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .upcomming-title-header{
+        text-align: center;
+        margin: 20px;
+    }
+}
+
+/* .project-title{
+    color: white;
+    margin: 120px 40px;
+    font-family: 'Courier New';
+    font-size: 28px;
+    text-align: center;
+} */
+
+/* .project-text{
+    flex: 2;
+}
+
+.homeLab1-title{
+    color: white;
+    margin-left: 50px;
+    font-family: 'Courier New';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.homeLab1-content{
+    color: white;
+    margin-left: 70px;
+    font-family: 'Courier New';
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.homeLab1-pic{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.homeLab1-pic img{
+    width: 150px;
+    height: auto;
+}
+
+.homeLab1-pic img:hover{
+    opacity: 1;
+}
+
+.sep1{
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.project-item-container-2{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.DDDS-title{
+    color: white;
+    margin-left: 50px;
+    font-family: 'Courier New';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.DDDS-content{
+    color: white;
+    margin-left: 70px;
+    font-family: 'Courier New';
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.DDDS-pic{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.DDDS-pic img{
+    width: 250px;
+    height: auto;
+}
+
+.DDDS-pic img:hover{
+    opacity: 1;
+}
+
+.project-item-container-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+    width: 100%;
+}
+
+.upcome-text{
+    flex: 2;
+}
+
+.upcomming-pics-wrapper{
+    display: flex;
+    flex: 1;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+.upcomming-pic img{
+    width: 150px;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.3s;
+    margin-right: 60px;
+}
+
+.upcomming-pic img:hover{
+    opacity: 1;
+}
+
+.upcomming-title{
+    color: white;
+    margin-left: 70px;
+    font-family: 'Courier New';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.upcomming-content{
+    color: white;
+    margin-left: 70px;
+    font-family: 'Courier New';
+    font-size: 18px;
+    margin-top: -60px;
+    line-height: 1.6;
+} */

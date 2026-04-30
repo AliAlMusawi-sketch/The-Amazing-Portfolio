@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="lock.png">
+</head>
+<body>
+    <div class="logo">
+        <h1>The Amazing Portfolio</h1>
+    </div>
+    <div class="intro">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="project.html">Projects</a>
+            <a href="cert.html">Certifications</a>
+            <a href="award.html">Awards</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="main-content-wrapper">
+        <div class="SOC">
+            <h1>Hello, and welcome to my<br>portfolio!</h1>
+            <h3>
+                Welcome to the amazing portfolio, where achievement, hard work, and commitment 
+                can be found. This portfolio demonstrates some highlights through my university 
+                journey, projects, and more. To explore more about me, feel free to navigate 
+                through the "Learn More" button, welcome again.
+            </h3>
+            <div class="learn">
+                <button><a href="about.html">Learn More</a></button>
+            </div>
+        </div>
+        <div class="highlights-container">
+            <button class="arrow prev" onclick="changeSlides(-1)">&#10094;</button>
+            <button class="arrow next" onclick="changeSlides(1)">&#10095;</button>
+            <div class="slide-wrapper">
+                <div class="slide active">
+                    <img src="image0 - Copy.jpeg" alt="Senior project presentation">
+                </div>
+                <div class="slide">
+                    <img src="Google AI Essentials.jpg" alt="Google AI Essentials certificate">
+                </div>
+                <div class="slide">
+                    <img src="CompTIA Security+ ce certificate.jpg" alt="CompTIA Securtiy+ Certificate">
+                </div>
+                <div class="slide">
+                    <img src="img1.jpg" alt="Graduation">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
